@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>MyWebPage</title>
+<link type="text/css" href="style.css">
+<!-- mobile setting -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!--CSS-->
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="animateall">
+<div class="wrapper">
+  <main>
+    <div id="logo" class="animate"> made by bhanu </div>
+    <section class="module parallax parallax-1">
+      <div class="container">
+        <h1>Front end developer. <br/>
+          <span>Visually Enhancing the Webspace</span> </h1>
+      </div>
+    </section>
+    <section class="module content">
+      <div class="container">
+        <h2>What's interesting about this page?</h2>
+        <p>Parallax scrolling! This special technique in computer graphics works on the idea of moving a background image slower than the foreground image to create an illusion of depth. </p>
+        <p>Parallax scrolling allows for the creation of dynamic, interactive user experience resulting in an enhanced visual appeal with the added advantage of displaying all content in one page therefore reducing navigation and clicks by the user to access content.</p>
+        <p>jQuery framework has been used for developing this web page because of my experience working with JavaScript and jQuery for developing web pages. This page has been made compatible on mobile devices as well by using CSS3 media-queries. </p>
+      </div>
+    </section>
+    <section class="module parallax parallax-2">
+      <div class="container">
+        <h1>I thrive on making the web a better place.</h1>
+      </div>
+    </section>
+    <section class="module content">
+      <div class="container" id="about">
+        <div class="left"> </div>
+        <div class="right">
+          <h2> A Sneakpeak about me!!</h2>
+          <p>I am an all round web aficionado with 3 years of web development experience. I am ever curios of the next big breakthrough in internet/ web technology and working towards being a part of the game changers in the domain.</p>
+          <p>In today's world, websites are a commonplace and I believe the front end makes an impact in differentiating one site from another. Being a front end developer to me means getting a chance to keep myself updated with the new frameworks and a reason to stay creative and along the curve of technological changes.</p>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+  <!-- /main -->
+  <a href="#" class="scrollToTop">Scroll To Top</a>
+  <footer>
+    <div class="container" id="contact">
+    <article>
+      <div class="article artc1">
+        <h2>Get in touch</h2>
+        <p> Reach out if you're looking to outsource work, talk about technology or to just add me on your professional network.</p>
+        <h3>Email</h3>
+        <p><a href="mailto:nbpr.nnr@gmail.com">nbpr.nnr@gmail.com</a></p>
+      </div>
+      </article>
+      <article>
+                        <div class="article artc2">
+                            <h2>Networks</h2>
+                            <p>See you on the other side</p>
+                           
+                             <p class="social">
+                             <a href="https://www.facebook.com/bhanuprakash.reddy.50" target="_blank" title="facebook"><img alt="facebook" src="images/fb.png" ></a>
+                             <a href="http://in.linkedin.com/pub/bhanuprakash-reddy-n/49/6a3/707" target="_blank" title="linkedin"><img alt="linkedin" src="images/linkedin.png" ></a>
+                             <a href="mailto:nbpr.nnr@gmail.com" target="_blank" title="mail"><img alt="mail" src="images/gmail.png" ></a>
+                             <a href="https://plus.google.com/100089510571966941527/posts" target="_blank" title="Googleplus"><img alt="gPlus" src="images/gplus.png" ></a>
+                             </p>
+                            
+                        </div>
+                    </article>
+    </div>
+  </footer>
+</div>
+<!-- /#wrapper --> 
+
+<script src="js/jquery-1.11.2.min.js"></script> 
+<script src="js/parallax.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(window).scroll(function(){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+	$('.scrollToTop').click(function(){
+		$('html, body').animate({scrollTop : 0},800);
+		return false;
+	});
+	
+});
+
+
+</script>
+</body>
+</html>
